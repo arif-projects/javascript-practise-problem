@@ -1,9 +1,9 @@
-function factorial(num){
-    var fact = 1;
-    for(i=1; i<=num; i++){
-        fact = fact*i;
-    }
-    return fact;
+function factorial(num) {
+  var fact = 1;
+  for (i = 1; i <= num; i++) {
+    fact = fact * i;
+  }
+  return fact;
 }
 
 var number = 6;
