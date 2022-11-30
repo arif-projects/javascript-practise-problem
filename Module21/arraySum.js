@@ -2,7 +2,7 @@ function getArraySum(number) {
   let sum = 0;
   for (let i = 0; i < number.length; i++) {
     let element = number[i];
-    sum = sum + element;
+    sum = sum + element; //sum = sum + number[i]
   }
   return sum;
 }
