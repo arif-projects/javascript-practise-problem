@@ -3,8 +3,7 @@ let newArray = [];
 for (number of numbers) {
   if (number > 0) {
     newArray.push(number);
-  } else {
-    console.log(newArray);
-    break;
   }
 }
+
+console.log(newArray);

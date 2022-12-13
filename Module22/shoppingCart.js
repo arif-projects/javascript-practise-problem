@@ -8,7 +8,7 @@ let products = [
 
 let totalPrice = 0;
 for (let product of products) {
-  let productPrice = product.price + product.quantity;
+  let productPrice = product.price * product.quantity;
   totalPrice = totalPrice + productPrice;
 }
 
