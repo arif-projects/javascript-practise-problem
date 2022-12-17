@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="title"></h2>
+    <button onclick="useFunction()">Use Function</button>
+    <button id="event">Use Event Listener</button>
+
+    <input id="input-feild" type="text" />
+    <button id="update">Update</button>
+
+    <script>
+      //Use function
+      function useFunction() {
+        const title = document.getElementById("title");
+        title.innerText = "Add by using only Function";
+      }
+
+      //Use direct Event listener
+
+      document.getElementById("event").addEventListener("click", function () {
+        const title = document.getElementById("title");
+        title.innerText = "Add by using Event Listener";
+      });
+
+      //use direct event listener
+      //Ekta input er value show kora event listener use kore
+      document.getElementById("update").addEventListener("click", function () {
+        const namefeild = document.getElementById("input-feild");
+        // console.log(namefeild.value);
+        const title = document.getElementById("title");
+        title.innerText = namefeild.value;
+        namefeild.value = "";
+      });
+    </script>
+  </body>
+</html>
