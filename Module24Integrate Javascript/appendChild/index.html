@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <header>
+      <h2>Append Child</h2>
+    </header>
+    <main>
+      <ul id="Blogs">
+        <li>Blog-1</li>
+        <li>Blog-2</li>
+        <li>Blog-3</li>
+        <li>Blog-4</li>
+      </ul>
+    </main>
+
+    <script>
+      //create the element
+      const li = document.createElement("li");
+      li.innerText = "Blog-5";
+      //where to
+      const ul = document.getElementById("Blogs");
+      //append new child
+      ul.appendChild(li);
+    </script>
+  </body>
+</html>
